@@ -24,7 +24,7 @@ html {
 
 .darkTheme {
   --background: #110324;
-  --background-item: #ffffff11;
+  --background-item: rgba(255, 255, 255, 0.07);
   --border-button: #bdbbbb;
   --font-color: #d7d6d6;
   --black: #161616;
