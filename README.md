@@ -3,6 +3,6 @@
 
 https://adamwilczak.github.io/homepage
 
-![moreTHANstudio](https://adamwilczak.github.io/homepage/pic/ogimage.png)
+![moreTHANstudio](https://adamwilczak.github.io/homepage/pic/ogImage.png)
 
 I'm sure the site will change as my skills improve.
