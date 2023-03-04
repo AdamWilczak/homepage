@@ -1,0 +1,32 @@
+.container__about {
+  display: flex;
+  flex-direction: row;
+}
+.about__img {
+  width: 300px;
+  border-radius: 25%;
+  margin-right: 25px;
+  box-shadow: 13px 21px 24px -12px rgba(46, 46, 46, 0.41);
+}
+
+.about__txt {
+  line-height: 200%;
+  text-align: justify;
+  color: var(--font-color);
+}
+
+@media only screen and (max-width: 375px) {
+  .container__about {
+    flex-direction: column;
+  }
+  .about__img {
+    width: 150px;
+    margin: auto;
+  }
+  .about__txt {
+    font-size: 10px;
+    line-height: 200%;
+    text-align: justify;
+    margin: 20px 20px;
+  }
+}

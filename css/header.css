@@ -1,0 +1,133 @@
+.header {
+  color: var(--font-color);
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1000px;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  position: sticky;
+  z-index: 1000;
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--font-color);
+  backdrop-filter: blur(7px);
+}
+
+.header__logo {
+  width: 50px;
+  fill: var(--font-color);
+  margin-bottom: 10px;
+}
+
+.header__logo:hover {
+  fill: #330274;
+}
+
+.header__txt {
+  overflow-wrap: break-word;
+  font-size: 36px;
+}
+
+.header__txt--stroke {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 36px;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--font-color);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  width: 80%;
+  border-top: 1px solid var(--font-color);
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.navDesktop__item {
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--font-color);
+  border: solid 1px var(--font-color);
+  border-radius: 12px;
+  padding: 3px;
+  background-color: rgba(199, 199, 199, 0.418);
+}
+
+.navDesktop__item:hover {
+  font-size: 14px;
+  font-weight: 600;
+  scale: 1.2;
+  color: #330274;
+  transition: all 0.2s ease-in-out;
+}
+
+.navDesktop__item--important:hover {
+  color: rgb(112, 18, 18);
+}
+
+/* .darkModeButton{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav__OnOff {
+  font-size: 12px;
+} */
+
+.nav__frameFlicker {
+  width: 60px;
+  height: 24px;
+  border-radius: 12px;
+  background-color: transparent;
+  border: solid 1px var(--font-color);
+  position: relative;
+}
+
+.nav__flicker {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--font-color);
+  position: absolute;
+  left: 1px;
+  box-shadow: inset 10px 10px 10px white, inset -10px -10px 10px black;
+  transition: 0.5s;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.nav__flicker.darkTheme {
+  transform: translateX(34px);
+  transition: 0.5s;
+}
+
+@media only screen and (max-width: 688px) {
+  .nav {
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+  .header__logo {
+    width: 30px;
+    fill: var(--font-color);
+    margin-bottom: 8px;
+  }
+  .navDesktop__item {
+    font-size: 10px;
+  }
+  .navDesktop__item:hover {
+    font-size: 10px;
+  }
+  .nav__frameFlicker {
+    scale: 0.5;
+  }
+  .header__txt {
+    scale: 0.5;
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,62 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+:root {
+  --background: #b3b1b1;
+  --background-item: #807e7e33;
+  --border-button: #bdbbbb;
+  --font-color: #2e2e2e;
+  --black: #161616;
+  --moon-shadow: #360476e6;
+  --withe: #ffffff;
+  --logo-color: #e7e4e4;
+}
+
+.darkTheme {
+  --background: #110324;
+  --background-item: #ffffff21;
+  --border-button: #bdbbbb;
+  --font-color: #d7d6d6;
+  --black: #161616;
+  --moon-shadow: #13012a;
+}
+
+.section__header{
+  display: flex;
+  justify-content: center;
+  margin: 30px 0px;
+  color: var(--font-color);
+  
+}
+
+.container {
+  display: flex;
+  max-width: 1000px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  scroll-margin-top: 270px;
+}
+
+@media only screen and (max-width: 688px) {
+  .container {
+    padding-top: 0px;
+    scroll-margin-top: 190px;
+   }
+  .section__header{
+    margin: 15px 0px;
+    font-size: 12px;
+  }
+}
+
+

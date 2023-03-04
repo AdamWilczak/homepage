@@ -1,0 +1,22 @@
+.container__contact{
+  display: flex;
+  flex-wrap: wrap;
+  backdrop-filter: blur(7px);
+  gap: 30px;
+}
+
+.container__contactItem{
+  width: 40px;
+}
+
+.footer_small{
+  color: var(--font-color);
+  font-size: xx-small;
+  text-align: center;
+}
+
+@media only screen and (max-width: 688px) {
+ .container__contact{
+  gap: 10px;
+}
+}
