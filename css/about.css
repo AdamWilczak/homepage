@@ -1,6 +1,7 @@
 .container__about {
   display: flex;
   flex-direction: row;
+  margin: 20px 20px;
 }
 .about__img {
   width: 300px;
@@ -16,7 +17,7 @@
   text-indent: 5%;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 390px) {
   .container__about {
     flex-direction: column;
   }
@@ -28,7 +29,7 @@
     font-size: 10px;
     line-height: 200%;
     text-align: justify;
-    margin: 20px 20px;
+    
     
   }
 }
