@@ -17,7 +17,7 @@
   text-indent: 5%;
 }
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 510px) {
   .container__about {
     flex-direction: column;
     margin: auto;
