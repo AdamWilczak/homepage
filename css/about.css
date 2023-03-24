@@ -1,7 +1,7 @@
 .container__about {
   display: flex;
   flex-direction: row;
-  margin: 20px 20px;
+  
 }
 .about__img {
   width: 300px;
@@ -20,6 +20,9 @@
 @media only screen and (max-width: 390px) {
   .container__about {
     flex-direction: column;
+    margin: auto;
+    word-break:normal;
+    padding: 20px;
   }
   .about__img {
     width: 150px;
